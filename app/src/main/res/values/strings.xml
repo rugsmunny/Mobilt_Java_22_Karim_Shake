@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Shake</string>
+    <string name="gyroValuesOutput" />
+    <string name="gyroSwitchLabel">ROTATION VALUES</string>
+    <string name="gameicon">GameIcon</string>
+    <string name="points">"Points: 0"</string>
+</resources>

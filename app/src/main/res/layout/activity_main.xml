@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="sensorPortrait"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/orientationValuesTextView"
+        android:layout_width="214dp"
+        android:layout_height="40dp"
+
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/gyroValuesOutput"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gyroSwitch"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/gyroSwitch"
+        android:layout_width="138dp"
+        android:layout_height="37dp"
+        android:text="@string/gyroSwitchLabel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/gameicon"
+        android:src="@drawable/ic_launcher_foreground"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="232dp" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="335dp"
+        android:layout_height="343dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
